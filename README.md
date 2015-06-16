@@ -1,4 +1,4 @@
-# weird_alley
+# Welcome to Weird Alley
 collection of general weirdness
 
 ## File Structure
