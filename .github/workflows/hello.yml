@@ -1,0 +1,16 @@
+name: Hello
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release"
+        required: true
+        type: string
+      backport:
+        type: boolean
+        default: false
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Would release ${{ inputs.version }} (backport=${{ inputs.backport }})"
